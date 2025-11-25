@@ -4,7 +4,7 @@ services:
     runtime: docker
     plan: starter
     region: oregon
-    branch: win
+    branch: main
     envVars:
       - key: NODE_ENV
         value: production
@@ -23,4 +23,5 @@ services:
     healthCheckPath: /
     dockerfilePath: ./Dockerfile
     dockerContext: .
+    autoDeploy: true
 
